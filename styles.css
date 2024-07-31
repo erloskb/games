@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #777;
+}
+img {
+    width: 500px; /* Устанавливаем ширину изображений в 500 пикселей */
+    height: auto; /* Высота будет автоматически подстраиваться */
+    border-radius: 5px;
+}
