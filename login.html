@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Лучшие игры 2011 года</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <style>
+            .window-container {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .login-container {
+                background-color: white;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 300px;
+            }
+            h2 {
+                text-align: center;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            input[type="text"], input[type="password"] {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+            input[type="submit"], .register-button {
+                width: 100%;
+                padding: 10px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover, .register-button:hover {
+                background-color: #45a049;
+            }
+            .error-message {
+                color: red;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            .register-button {
+                background-color: #007BFF;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Мой Сайт</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="games.html">Игры</a></li>
+                    <li><a href="movies.html">Фильмы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li class="selected"><a href="login.html">Войти</a></li>
+                    <li><a href="registration.html">Зарегистрироваться</a></li>
+                </ul>
+            </nav>
+        </header> 
+        <div class="window-container">
+    <div class="login-container">
+        <h2>Вход на сайт</h2>
+        <div class="error-message" id="error-message"></div>
+        <form id="login-form">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Войти">
+        </form>
+        <button class="register-button" onclick="window.location.href='registration.html'">Регистрация</button>
+    </div>
+</div>
+</body>
+</html>

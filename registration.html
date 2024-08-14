@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+        .window-container{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .registration-container {
+            margin-top: 175px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .success-message {
+            color: green;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .error-message {
+            color: red;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Мой Сайт</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="games.html">Игры</a></li>
+                <li><a href="movies.html">Фильмы</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="login.html">Войти</a></li>
+                <li class="selected"><a href="registration.html">Зарегистрироваться</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="window-container">
+    <div class="registration-container">
+        <h2>Регистрация</h2>
+        <div class="success-message" id="success-message"></div>
+        <div class="error-message" id="error-message"></div>
+        
+        <form id="registration-form">
+            <label for="username">Логин:</label>
+            <input type="text" id="username" name="username" required placeholder="Обязательное поле">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required placeholder="Обязательное поле">
+            <label for="age">Возраст:</label>
+            <input type="number" id="age" name="age" min="0" max="100" step="2" value="10" required>
+            <label for="favorite-game">Любимая игра:</label>
+            <select id="favorite-game" name="favorite-game" required>
+                <option value="" disabled selected>Выберите игру</option>
+                <option value="The Elder Scrolls V: Skyrim">The Elder Scrolls V: Skyrim</option>
+                <option value="Portal 2">Portal 2</option>
+                <option value="Dark Souls">Dark Souls</option>
+                <option value="Batman: Arkham City">Batman: Arkham City</option>
+                <option value="Uncharted 3: Drake's Deception">Uncharted 3: Drake's Deception</option>
+                <option value="Battlefield 3">Battlefield 3</option>
+                <option value="MW3 (Call of Duty: Modern Warfare 3)">MW3 (Call of Duty: Modern Warfare 3)</option>
+                <option value="Little Big Planet 2">Little Big Planet 2</option>
+                <option value="Rayman Origins">Rayman Origins</option>
+                <option value="LA Noire">LA Noire</option>
+            </select>
+
+            <label>Игры, которые вы играли:</label>
+            <div class="checkbox-label">
+                <input type="checkbox" id="skyrim" name="played-games" value="The Elder Scrolls V: Skyrim">
+                <label for="skyrim">The Elder Scrolls V: Skyrim</label>
+            </div>
+            <div class="checkbox-label">
+                <input type="checkbox" id="portal2" name="played-games" value="Portal 2">
+                <label for="portal2">Portal 2</label>
+            </div>
+            <div class="checkbox-label">
+                <input type="checkbox" id="dark-souls" name="played-games" value="Dark Souls">
+                <label for="dark-souls">Dark Souls</label>
+            </div>
+            <div class="checkbox-label">
+                <input type="checkbox" id="batman" name="played-games" value="Batman: Arkham City">
+                <label for="batman">Batman: Arkham City</label>
+            </div>
+            <div class="checkbox-label">
+                <input type="checkbox" id="uncharted" name="played-games" value="Uncharted 3: Drake's Deception">
+                <label for="uncharted">Uncharted 3: Drake's Deception</label>
+            </div>
+            <div class="checkbox-label">
+                <input type="checkbox" id="battlefield" name="played-games" value="Battlefield 3">
+                <label for="battlefield">Battlefield 3</label>
+            </div>
+            <div class="checkbox-label">
+                <input type="checkbox" id="mw3" name="played-games" value="MW3 (Call of Duty: Modern Warfare 3)">
+                <label for="mw3">MW3 (Call of Duty: Modern Warfare 3)</label>
+            </div>
+            <div class="checkbox-label">
+                <input type="checkbox" id="lbp2" name="played-games" value="Little Big Planet 2">
+                <label for="lbp2">Little Big Planet 2</label>
+            </div>
+            <div class="checkbox-label">
+                <input type="checkbox" id="rayman" name="played-games" value="Rayman Origins">
+                <label for="rayman">Rayman Origins</label>
+            </div>
+            <div class="checkbox-label">
+                <input type="checkbox" id="la-noire" name="played-games" value="LA Noire">
+                <label for="la-noire">LA Noire</label>
+            </div>
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>
+</body>
+</html>
