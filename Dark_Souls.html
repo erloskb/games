@@ -30,11 +30,13 @@
             margin: 10px 0;
         }
     </style>
+     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-
+<!-- Кнопка назад -->
+<a href="index.html" class="back-button">Назад</a>
     <h1>Dark Souls</h1>
-
+    <div><img src="images/Dark Souls.jpg" alt="Dark Souls"><iframe width="560" height="315" src="https://www.youtube.com/embed/o1780AqAa20?si=AfjNhRk0HB8ah89W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
     <p><strong>Dark Souls</strong> — это видеоигра в жанре action RPG, разработанная японской студией FromSoftware и выпущенная в 2011 году. Игра является духовным наследником <strong>Demon's Souls</strong>, выпущенной в 2009 году, и входит в серию Dark Souls, которую оценили как беспрецедентно сложную, но справедливую, с богатым миром и глубоким сюжетом.</p>
 
     <h2>Основные характеристики игры:</h2>
@@ -77,5 +79,15 @@
     <h2>Заключение</h2>
     <p><strong>Dark Souls</strong> — это не просто игра; это опыт, который требует от игрока терпения, упорства и желания изучать мир вокруг себя. С каждым поражением игроки открывают для себя больше о механике, истории и сложностях Лордрана, что делает каждую победу особенной. Эта игра проверяет границы человеческой настойчивости и решимости, заведя игроков в мир, полный страшных существ, захватывающих боссов и глубоких тайн.</p>
     <p>подробнее на <a href="https://ru.wikipedia.org/wiki/Dark_Souls">википедии</a></p>
+    <h2>Комментарии:</h2>
+    <form action="submit_comment.php" method="post">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="comment">Комментарий:</label><br>
+        <textarea id="comment" name="comment" rows="4" required></textarea><br>
+        
+        <input type="submit" value="Отправить комментарий">
+    </form>
 </body>
 </html>

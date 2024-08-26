@@ -18,11 +18,14 @@ li {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 img {
-    width: 500px; /* Устанавливаем ширину изображений в 500 пикселей */
-    height: auto; /* Высота будет автоматически подстраиваться */
+    width: auto; /* Устанавливаем ширину изображений в 500 пикселей */
+    height: 300px; /* Высота будет автоматически подстраиваться */
     border-radius: 5px;
+   
 }
 header {
     background-color: #39ce3e;
@@ -85,4 +88,21 @@ footer {
 
 .footer-links a:hover {
     text-decoration: underline;
+}
+.back-button {
+    background-color: #4CAF50; /* Зелёный цвет */
+    border: none; /* Без границы */
+    color: white; /* Цвет текста */
+    padding: 15px 32px; /* Отступы */
+    text-align: center; /* По центру */
+    text-decoration: none; /* Без подчеркивания */
+    display: inline-block; /* В блоке */
+    font-size: 16px; /* Размер шрифта */
+    margin: 10px 2px; /* Поля */
+    cursor: pointer; /* Указатель мыши */
+    border-radius: 8px; /* Скругленные углы */
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Более темный зеленый при наведении */
 }

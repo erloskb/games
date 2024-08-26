@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head> 
 <body>
+    <!-- Кнопка назад -->
+<a href="index.html" class="back-button">Назад</a>
 <h1>The Elder Scrolls V Skyrim</h1>
  <img src="images/The Elder Scrolls V Skyrim.jpg" alt="Skyrim" height="1000" width="200">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JSRtYpNRoN0?si=ESYBBm4yiNr3Pxqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
@@ -53,6 +55,18 @@
     <p>Skyrim оказала значительное влияние на индустрию видеоигр, задав высокие стандарты для ролевых игр с открытым миром. Она считается одной из самых популярных и лучших игр всех времен. Игра продолжает привлекать новую аудиторию благодаря своей глубине, взаимодействию и открытости игрового мира.</p>
 
     <p>Skyrim – это не просто игра, это целая эпоха в мире видеоигр, вдохновляющая как разработчиков, так и игроков благодаря своим безграничным возможностям и увлекательному миру.</p>
-<p>подробнее на <a href="https://ru.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim">википедии</a></p>
+    <p>Подробнее на <a href="https://ru.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim">википедии</a></p>
+
+    <h2>Комментарии:</h2>
+    <form action="submit_comment.php" method="post">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="comment">Комментарий:</label><br>
+        <textarea id="comment" name="comment" rows="4" required></textarea><br>
+        
+        <input type="submit" value="Отправить комментарий">
+    </form>
+
 </body>
 </html>
